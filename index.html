@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checklist de Notebook - Fonte de Alimentação, Conexões e Tela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20%;
+        }
+        .conteudo-pagina{
+            
+            
+        }
+        .titulo-area{
+            font-size: 15px;
+            color:brown
+        }
+        .checklist-container {
+            display: flex;
+                flex-wrap: wrap; /* Quebra para nova linha, caso não caibam em uma única linha */
+                
+        }
+        
+        .checklist-item {
+            margin: 5px; /* Adiciona um espaçamento entre as áreas de checklist */
+            padding: 1px; /* Adiciona um espaçamento interno para melhor aparência */
+            border: 2px solid brown; /* Adiciona a borda marrom */
+            max-width: calc(50% - 10px); /* Define a largura máxima para cada área */
+            box-sizing: border-box;
+        }
+        
+        .item-label {
+            font-weight: bold;
+        }
+        
+        .item-checkbox {
+            margin-left: 10px;
+        }
+        
+        .item-checkbox label {
+            margin-right: 5px;
+        }
+        .item-image {
+            display: block;
+            max-width: 300px;
+            margin-top: 10px;
+        }
+        .print-button {
+            display: block;
+            margin: 20px auto; /* Centraliza o botão horizontalmente */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        } 
+       
+        @media print {
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            }
+            .titulo-area:nth-child(even) {
+            margin-top: 30px; /* Espaçamento entre títulos pares */
+            }
+            .conteudo-pagina {
+                overflow: hidden; /* Evita que elementos vazem para outra página */
+            }
+            .checklist-item {
+                max-width: 100%; /* Define a largura máxima de 100% para ocupar toda a página */
+            }
+            
+    </style>
+</head>
+<body class="conteudo-pagina">
+    
+      <h1 class="titulo-area">Fonte de Alimentação</h1>
+         <div class="checklist-container">
+           <div class="checklist-item">
+              <span class="item-label">Cabo de Energia:</span>
+              <div class="item-checkbox">
+                <label><input type="checkbox" name="cabo_energia" value="ok">OK</label>
+                <label><input type="checkbox" name="cabo_energia" value="danificado">Danificado</label>
+                <label><input type="checkbox" name="cabo_energia" value="nao_tem">Não Tem</label>
+              </div>
+            </div>
+       
+    
+      <div class="checklist-item">
+        <span class="item-label">Cabo do Conector:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="cabo_conector" value="ok">OK</label>
+            <label><input type="checkbox" name="cabo_conector" value="danificado">Danificado</label>
+            <label><input type="checkbox" name="cabo_conector" value="nao_tem">Não Tem</label>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <span class="item-label">Plug/Conector:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="plug_conector" value="ok">OK</label>
+            <label><input type="checkbox" name="plug_conector" value="danificado">Danificado</label>
+            <label><input type="checkbox" name="plug_conector" value="nao_tem">Não Tem</label>
+        </div>
+      </div>
+    
+      <div class="checklist-item">
+        <span class="item-label">Fonte:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="fonte" value="ok">OK</label>
+            <label><input type="checkbox" name="fonte" value="danificado">Danificado</label>
+            <label><input type="checkbox" name="fonte" value="nao_tem">Não Tem</label>
+        </div>
+      </div>
+    </div>
+      <h1 class="titulo-area">Conexões, Portas e Periféricos</h1>
+      <div class="checklist-container">
+      <div class="checklist-item">
+        <span class="item-label">CD/DVD:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="cd_dvd" value="ok">OK</label>
+            <label><input type="checkbox" name="cd_dvd" value="danificado">Danificado</label>
+            <label><input type="checkbox" name="cd_dvd" value="nao_tem">Não Tem</label>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+          <span class="item-label">VGA:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="vga" value="ok">OK</label>
+            <label><input type="checkbox" name="vga" value="danificado">Danificado</label>
+            <label><input type="checkbox" name="vga" value="nao_tem">Não Tem</label>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <span class="item-label">USB:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="usb" value="ok">OK</label>
+            <label><input type="checkbox" name="usb" value="danificado">Danificado</label>
+            <label><input type="checkbox" name="usb" value="nao_tem">Não Tem</label>
+        </div>
+      </div>
+
+      <div class="checklist-item">
+        <span class="item-label">Power Jack:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="power_jack" value="ok">OK</label>
+            <label><input type="checkbox" name="power_jack" value="danificado">Danificado</label>
+            <label><input type="checkbox" name="power_jack" value="nao_tem">Não Tem</label>
+        </div>
+      </div>
+      </div>
+    <h1 class="titulo-area">Tela</h1>
+    <div class="checklist-container">
+    <div class="checklist-item">
+        <span class="item-label">Tela Liga:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="tela_liga" value="ok">OK</label>
+            <label><input type="checkbox" name="tela_liga" value="riscada">Riscada</label>
+            <label><input type="checkbox" name="tela_liga" value="manchada">Manchada</label>
+            <label><input type="checkbox" name="tela_liga" value="nao_liga">Não Liga</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Teclado:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="teclado" value="ok">OK</label>
+            <label><input type="checkbox" name="teclado" value="falhando">Falhando</label>
+            <label><input type="checkbox" name="teclado" value="falta_tecla">Falta Tecla</label>
+            <label><input type="checkbox" name="teclado" value="nao_funciona">Não Funciona</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Touchpad:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="touchpad" value="ok">OK</label>
+            <label><input type="checkbox" name="touchpad" value="riscado">Riscado</label>
+            <label><input type="checkbox" name="touchpad" value="manchado">Manchado</label>
+            <label><input type="checkbox" name="touchpad" value="nao_funciona">Não Funciona</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Webcam:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="webcam" value="ok">OK</label>
+            <label><input type="checkbox" name="webcam" value="nao_possui">Não Possui</label>
+            <label><input type="checkbox" name="webcam" value="nao_funciona">Não Funciona</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Borrachas de Proteção:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="borrachas_protecao" value="falta">Falta</label>
+            <label><input type="checkbox" name="borrachas_protecao" value="nao_tem">Não Tem</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Carcaça:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="carcaca" value="ok">OK</label>
+            <label><input type="checkbox" name="carcaca" value="riscada">Riscada</label>
+            <label><input type="checkbox" name="carcaca" value="manchada">Manchada</label>
+            <label><input type="checkbox" name="carcaca" value="quebrada">Quebrada</label>
+        </div>
+    </div>
+    </div>
+    <h1 class="titulo-area">Tampa Superior</h1>
+    <div class="checklist-container">
+    <div class="checklist-item">
+        <span class="item-label">Tampa OK:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="tampa_ok" value="ok">OK</label>
+            <label><input type="checkbox" name="tampa_ok" value="ruim">Ruim</label>
+            <label><input type="checkbox" name="tampa_ok" value="quebrada">Quebrada</label>
+            <label><input type="checkbox" name="tampa_ok" value="riscada">Riscada</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Dobradiças:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="dobradicas_ok" value="ok">OK</label>
+            <label><input type="checkbox" name="dobradicas_ok" value="ruim">Ruim</label>
+            <label><input type="checkbox" name="dobradicas_ok" value="quebradas">Quebradas</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Borrachas de Apoio:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="borrachas_apoio_completo" value="completo">Completo</label>
+            <label><input type="checkbox" name="borrachas_apoio_faltam" value="faltam">Faltam</label>
+            <label><input type="checkbox" name="borrachas_apoio_nao_tem" value="nao_tem">Não Tem</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Parafusos:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="parafusos_completo" value="completo">Completo</label>
+            <label><input type="checkbox" name="parafusos_faltam" value="faltam">Faltam</label>
+            <label><input type="checkbox" name="parafusos_nao_tem" value="nao_tem">Não Tem</label>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <span class="item-label">Etiqueta:</span>
+        <div class="item-checkbox">
+            <label><input type="checkbox" name="etiqueta_legivel" value="legivel">Legível</label>
+            <label><input type="checkbox" name="etiqueta_ilegivel" value="ilegivel">Ilegível</label>
+            <label><input type="checkbox" name="etiqueta_nao_tem" value="nao_tem">Não Tem</label>
+        </div>
+    </div>
+    </div>
+</body>
+    <button class="print-button" onclick="window.print()">Imprimir Página</button>
+</body>
+</html>
+
