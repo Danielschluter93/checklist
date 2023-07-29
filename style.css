@@ -1,0 +1,139 @@
+@import url();
+*{
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 10% 10% 50%;
+    font-size: small;
+   
+    
+ 
+    
+   }
+   .form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 190px;
+  }
+  
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 5px brown solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 25px;
+    color: brown;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: brown;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: brown;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: brown;
+    transform: translateY(-30px);
+  }   
+
+.fonte-coluna{
+    display:flex
+   
+    
+
+}
+.titulo-os{
+    display: flex;
+    justify-content:space-around;
+}
+.titulo-area{
+    font-size: 15px;
+    color:brown
+}
+.pares-checklist{
+    display: flex;
+    align-items: center;
+    justify-content:end
+    
+    
+}
+.conteudo-pagina {
+ min-height: 100vh
+ 
+ 
+        
+}
+
+.checklist-item {
+    margin: 5px; /* Adiciona um espaçamento entre as áreas de checklist */
+    padding: 1px; /* Adiciona um espaçamento interno para melhor aparência */
+    border: 2px solid brown; /* Adiciona a borda marrom */
+    max-width: calc(50% - 10px); /* Define a largura máxima para cada área */
+    box-sizing: border-box;
+}
+
+.item-label {
+    font-weight: bold;
+}
+
+.item-checkbox {
+    margin-left: 10px;
+}
+
+.item-checkbox label {
+    margin-right: 5px;
+}
+.item-image {
+    display: block;
+    max-width: 300px;
+    margin-top: 10px;
+}
+.print-button {
+    display: block;
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+@media print {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    }
+    .titulo-area:nth-child(even) {
+    margin-top: 5%; /* Espaçamento entre títulos pares */
+    }
+    .conteudo-pagina {
+
+    }
+    .checklist-item {
+        max-width: 100%; /* Define a largura máxima de 100% para ocupar toda a página */
+    }
+    
